@@ -7,7 +7,7 @@
     "start": "nodemon server.js",
     "start:dev": "webpack --config ./webpack/webpack.dev.js && npm start",
     "build:prod": "webpack --config ./webpack/webpack.prod.js && npm start",
-    "heroku-postbuild": "npm run buidl:dev"
+    "heroku-postbuild": "npm run build:dev"
   },
   "keywords": [],
   "author": "",
