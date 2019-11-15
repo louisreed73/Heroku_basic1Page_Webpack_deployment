@@ -4,10 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon server.js",
-    "start:dev": "webpack --config ./webpack/webpack.dev.js && npm start",
-    "build:prod": "webpack --config ./webpack/webpack.prod.js && npm start",
-    "heroku-postbuild": "npm run build:dev"
+    "dev": "nodemon server.js",
+    "start:dev": "webpack --config ./webpack/webpack.dev.js && npm dev",
+    "build:prod": "webpack --config ./webpack/webpack.prod.js && npm dev",
+    "heroku-postbuild": "npm run build:prod"
   },
   "keywords": [],
   "author": "",
