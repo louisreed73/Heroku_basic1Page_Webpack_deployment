@@ -8,6 +8,8 @@ const app = express();
 //Serving the files on the dist folder
 app.use(express.static(DIST_DIR));
 
+app.set("port",process.env.PORT || 3000);
+
 //Send index.html when the user access the web
 app.get("*", function (req, res) {
   res.sendFile(path.join(DIST_DIR, "index.html"));
