@@ -4,10 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "node server.js",
+    "start": "node server.js",
     "start:dev": "webpack --config ./webpack/webpack.dev.js",
-    "build:prod": "webpack --config ./webpack/webpack.prod.js",
-    "heroku-postbuild": "npm run build:prod"
+    "postinstall": "webpack --config ./webpack/webpack.prod.js"
+    
   },
   "keywords": [],
   "author": "",
