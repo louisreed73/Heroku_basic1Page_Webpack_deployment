@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "dev": "nodemon server.js",
-    "start:dev": "webpack --config ./webpack/webpack.dev.js && npm dev",
-    "build:prod": "webpack --config ./webpack/webpack.prod.js && npm dev",
+    "start:dev": "webpack --config ./webpack/webpack.dev.js && npm run dev",
+    "build:prod": "webpack --config ./webpack/webpack.prod.js && npm run dev",
     "heroku-postbuild": "npm run build:prod"
   },
   "keywords": [],
