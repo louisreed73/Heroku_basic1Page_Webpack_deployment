@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon server.js",
-    "start:dev": "webpack --config ./webpack/webpack.dev.js && npm run dev",
-    "build:prod": "webpack --config ./webpack/webpack.prod.js && npm run dev",
+    "start": "node server.js",
+    "start:dev": "webpack --config ./webpack/webpack.dev.js",
+    "build:prod": "webpack --config ./webpack/webpack.prod.js",
     "heroku-postbuild": "npm run build:prod"
   },
   "keywords": [],
